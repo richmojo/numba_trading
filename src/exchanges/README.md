@@ -8,4 +8,4 @@ I did'nt want to waste my time with it. The overall logic can be applied to othe
 - This is for calculating local trades when running backtests and simulations
 
 ## DYDX
-- Untested but should work. I haven't ran it with my bot yet. I would make sure you test it before putting any real money on it. That being said you should do that with everything in this repo. 
+- Untested but should work. I would make sure you test it before putting any real money on it. That being said you should do that with everything in this repo. 
