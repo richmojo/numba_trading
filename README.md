@@ -2,11 +2,11 @@
 
     Live and backtesting library that uses numba and ray for speed and parallelism.
 
-This is an example of the way I do my live trading. If I was really making a strategy as simple as the example I show here I would probably not use something this confusing/complex but for my strategy this was as simple as I could get it. 
+This repo is an example of how I do all my live trading. For the strategy I show here the overall framework is probably a lot more complicated than it would need to be. But I wanted to show how I do things in general.
 
 I wouldnt recommend using this for anything other than the as a sample guide for developing your own library. A lot of this proabably won't be needed for your strategy and your strategy might need things that this doesnt provide.
 
-This repo more than likely won't be updated.
+This repo more than likely won't be updated. 
 
 # Basic Framework
 
@@ -27,7 +27,7 @@ This repo more than likely won't be updated.
 - \_numba.py
   - This is where you define all the numba functions. I make everything that doesnt invole an api call a numba function
   - Completely unecessary for this strategy and probably for most higher time frame strategies but it doenst hurt to speed things up and its not hard to do.
-  - Advice for using numba, first make sure it works without the @njit decorator and then add it. The biggest problem I have is with datatype. You need to tell it what everything is.
+  - Advice for using numba, first make sure it works without the @njit decorator and then add it. With numba you have to declare the types of all the variables and sometimes its hard to dtermine why its failing. So make it works without numba first and then add it.
 - \_tune.py (optional)
 
   - This is where you define the hyperparameters that you want to tune and the ranges you want to tune them in.
